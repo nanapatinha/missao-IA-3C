@@ -28,6 +28,10 @@ body {
     padding: 20px;
 }
 
+h1, .caixa-perguntas, .caixa-resultado {
+    front-family: 'chakra petch', sans-serif;
+}
+
 h1{
     color: var(--cor-destaque);
 }
