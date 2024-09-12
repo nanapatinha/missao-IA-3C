@@ -40,7 +40,7 @@ function respostaSelecionada(opcaoSelecionada){
 }
 
 function mostraResultado(){
-    caixaPerguntas.textContent = "Em 2049...";
+    caixaPerguntas.textContent = `Em 2049, &{nome}`
     textoResultado.textContent = historiaFinal;
     caixaAlternativas.textContent = "";
     caixaResultado.classList.add("mostrar");
@@ -54,4 +54,9 @@ fuction jogarnovamente(){
     mostrapergunta();
 }
 
+function substituiNome() {
+    for(const pergunta of perguntas ) {
+        perguntas.enunciado = pergunta.enunciado.replace(/você/g,nome);
+    }
+}
 mostraPergunta();
